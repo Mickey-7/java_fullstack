@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spring Boot WebSocket Chat Applicatio</title>
+  </head>
+  <body>
+    <noscript>
+      <h3>Sorry! Your browser doesn't support Javascript</h3>
+    </noscript>
+    <!-- username registration -->
+    <div>
+      <h2>Type your username</h2>
+      <!-- need to have id="usernameForm" as it is used on main.js as event listener -->
+      <form id="usernameForm">
+        <!-- need to have id="name" property as it is extracted on main.js connect() method -->
+        <input type="text" id="name" placeholder="Username" />
+        <button>
+          Start Chatting
+        </button>
+      </form>
+    </div>
+    <!-- chat area -->
+    <div>
+      <div>
+        <h3>Spring WebSocket Chat Demo</h3>
+      </div>
+      <!-- connected to onError() method on main.js -->
+      <div class="connecting">
+        Connecting...
+      </div>
+      <!-- message area -->
+      <ul id="messageArea"></ul>
+      <!-- message form -->
+      <form id="messageForm">
+        <!-- need to have id="message" property as it is extracted on main.js sendMessage() method -->
+        <input type="text" id="message" placeholder="Type a message..." />
+        <button>Send</button>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

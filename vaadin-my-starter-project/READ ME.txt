@@ -1,0 +1,16 @@
+reference : https://vaadin.com/learn/tutorials/modern-web-apps-with-spring-boot-and-vaadin/importing-running-and-debugging-a-java-maven-project-in-intellij-idea
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Importing a Maven project into IntelliJ
+    Maven is the most popular project management tool for Java.
+    It takes care of managing your project structure and dependencies, and builds runnable artifacts.
+
+    To start, download a Spring Boot-based Vaadin starter project:
+
+        Go to https://vaadin.com/start.
+
+        Select the Spring Boot technology stack.
+
+        Click Download.
+
